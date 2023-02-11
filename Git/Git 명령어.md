@@ -1,4 +1,4 @@
-> #Git 자주 사용하는 명령어<br>
+# Git 자주 사용하는 명령어
 [blog]https://dazzle-dazzle.tistory.com/20
 
 git init : 깃저장소 초기화. 원하는 작업폴더(디렉토리)에서 이 명령어를 실행해야 git 작업장소로 지정된다. (안하면 그냥 일반 디렉토리)<br>
