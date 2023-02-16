@@ -294,7 +294,89 @@ __굵게굵게__
 ----
 <br>
 
-## <인라인코드(Lists)>
+## <인라인코드(Inline Code)>
 <br>
+[output]<br><br>
+
+그것은 `분명히 거기 있었을 것` 이다.
+```
+아니요 없었는데요
+```
+```java
+public class Main {
+  public static void main(String[] args){
+     System.out.println("Hello MarkDown!!");
+   }
+ }
+```
+
+<br>
+[input]
+
+    그것은 `분명히 거기 있었을 것` 이다.
+    ```
+    아니요 없었는데요
+    ```
+
+    ```java
+    public class Main {
+      public static void main(String[] args){
+        System.out.println("Hello MarkDown!!");
+      }
+    }
+    ```
+
+- \`백틱으로 감싸서 표기
+- 위아래로 ```3개 씩 감싸면 블럭으로 만들어짐
+- 코드 하이라이트를 사용하고 싶을 경우 위쪽 백틱에 언어명을 작성하면 됨
+- 4칸이상 들여쓰기(tab키)시 코드블럭 생성 가능
+
+----
+<br>
+
+## <링크(Link, Anchor)>
+<br>
+[output]<br><br>
+   
+[Naver](https://www.naver.com "네이버")   
+https://www.naver.com/   
+naver@naver.com   
+[네이버로 이동하려면 여기 눌러!](https://www.naver.com/)
+
+<br>
+[input]
+   
+    [Naver](https://www.naver.com "네이버")   
+    https://www.naver.com/   
+    naver@naver.com   
+    [네이버로 이동하려면 여기 눌러!](https://www.naver.com/)
+
+- 이메일이나, 주소는 자동으로 연결 됨
+
+----
+<br>
+
+## <이미지(Image)>
+<br>
+
+[output]<br><br>
+
+![당신의 선택은](https://cdn.pixabay.com/photo/2012/04/28/17/11/people-43575_1280.png)  
+![멜크](https://cdn.pixabay.com/photo/2016/11/24/08/37/santa-1855681_1280.jpg "시원쓰")
+[![링크스마일](https://cdn.pixabay.com/photo/2015/11/13/10/07/smiley-1041796_1280.jpg)](https://github.com/Myomyoring)
+
+<br>
+[input]
+
+      ![당신의 선택은](https://cdn.pixabay.com/photo/2012/04/28/17/11/people-43575_1280.png)  
+      ![멜크](https://cdn.pixabay.com/photo/2016/11/24/08/37/santa-1855681_1280.jpg "시원쓰")
+      [![링크스마일](https://cdn.pixabay.com/photo/2015/11/13/10/07/smiley-1041796_1280.jpg)](https://github.com/Myomyoring)
+      
+      
+- 이미지에 마우스 오버하면 나오는 문구는 이미지링크 뒤에 ""를 붙여주면 됨
+- 이미지 클릭 시 링크를 넣고 싶으면 \[!\[이미지이름](이미지링크)](연결할링크) 적어주면 됨 
+
+--- 
+
 
 
