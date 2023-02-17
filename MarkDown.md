@@ -31,9 +31,8 @@
 <br>
 
 ### 깃허브에서 적용되지 않는 문법 (html문법으로 사용해야 함)
-- underline 
+- 밑줄(underline) 
 - 위첨자, 아래첨자
-- 각주
 
 <br>
 
@@ -442,15 +441,115 @@ naver@naver.com
       :smile:
 
 - 맥은 `control` + `command` + `space`, 윈도우는 `윈도우키` + `.` 버튼 누르면 이모지 창 나옴
-- 이모지를 그냥 복사 붙여넣기 해도 된다.
+- 이모지를 그냥 복사 붙여넣기 해도 됨
+- ::콜론 두개 사이에 이모지 지정어를 넣어주면 이모지로 출력
 
-test
+---
+<br>
 
-:smile:
-==하이라이트== 2^2^ _언더라인_
+## <각주(Footnote)>
+<br>
 
-각주[^1]
+[output]<br><br>
 
-[^1]:<http://www.naver.com>
+첫째각주[^1]   
+둘째각주[^2]
 
-$$ (\alpha + \beta)^2 = a^2 min_a 수식 \\밑\\줄\\인\\가 $$
+[^1]:첫째미주
+[^2]:둘째미주
+
+<br>
+[input]
+
+    첫째각주[^1]   
+    둘째각주[^2]
+
+    [^1]:첫째미주
+    [^2]:둘째미주
+
+- 대괄호안에 ^+숫자로 각주를 달고, 아래에 미주를 추가 할 수 있음
+
+---
+<br>
+
+## <수식(Mathematical Expression)>
+<br>
+
+[output]<br><br>
+
+$수식 = (\alpha + \beta)^2 = a^2 min_a$
+
+$$가운데 정렬 수식 =  (\alpha + \beta)^2 = a^2 min_a$$
+
+$\\슬래시와빨강글자어디에쓰는가$
+
+$x$축으로 $y$만큼 이동
+
+$
+2^2\\
+2_2
+$
+
+$
+띄어 쓰기\\
+띄어\,쓰기\\
+띄어\;쓰기\\
+띄어\quad쓰기\\
+$
+
+$x\times x=x$
+
+$2\sqrt 2 \over 5+2$
+
+$\frac{2\sqrt2}5+2$
+
+$\frac{2\sqrt2}{5+2}$
+
+<br>
+[input]
+
+
+    $수식 = (\alpha + \beta)^2 = a^2 min_a$
+
+    $$가운데 정렬 수식 =  (\alpha + \beta)^2 = a^2 min_a$$
+
+    $\\슬래시와빨강글자어디에쓰는가$
+
+    $x$축으로 $y$만큼 이동
+
+    $
+    2^2\\
+    2_2
+    $
+
+    $
+    띄어 쓰기\\
+    띄어\,쓰기\\
+    띄어\;쓰기\\
+    띄어\quad쓰기\\
+    $
+
+    $x\times x=x$
+
+    $2\sqrt 2 \over 5+2$
+
+    $\frac{2\sqrt2}5+2$
+
+    $\frac{2\sqrt2}{5+2}$
+
+- `$`수식`$` 달러 사이에 수식을 써주면 됨
+- `$$`수식`$$` 달러 두 개를 쓰면 **가운데정렬** 됨
+- 수식내에서 위첨자, 아래첨자 가능
+- 수식내에서 `\\`는 `줄바꿈`
+- `\,` =  1번 띄어쓰기, `\;` = 2번 띄어쓰기, `\quad` = 4번 띄어쓰기
+- 수식내에서 곱하기 문자는 `\times` 로 표기
+- 분수는 `\over` 과 `\frac` 로 사용, \over은 좌우 기준, \frac은 좌괄호는 분자 우괄호는 분모이나 2문자 이상의 경우 {}중괄호로 묶어주기
+
+---
+
+## 참고하면 좋을 사이트
+<br>
+
+- [이모지 참고 : 인파님 블로그](https://inpa.tistory.com/entry/MarkDown-%F0%9F%93%9A-Emoji-%EC%9D%B4%EB%AA%A8%ED%8B%B0%EC%BD%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
+- [수식 참고 : d2h10s님 벨로그](https://velog.io/@d2h10s/LaTex-Markdown-%EC%88%98%EC%8B%9D-%EC%9E%91%EC%84%B1%EB%B2%95)
+- [html테이블을 markdown테이블로 변환 : Tableconvert](https://tableconvert.com/ko/html-to-markdown)
