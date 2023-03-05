@@ -47,6 +47,3 @@ remote: Write access to repository not granted. unable to access '(repo url)': T
 
 
 - 해결방법 : 토큰 재발급 후, git remote set-url origin https://{token}@github.com/{git_repository_url} 
-
-<br>ㅈㅐ
-<br>
