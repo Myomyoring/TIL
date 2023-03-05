@@ -38,3 +38,15 @@ error: 레퍼런스를 에 푸시하는데 실패했습니다
 [2]
 
 Need to specify how to reconcile divergent branches.
+	
+[3]
+
+remote: Write access to repository not granted. unable to access '(repo url)': The requested URL returned error: 403   
+	
+- 원인 : 나의 경우엔 토큰 만료로 인한 에러!
+
+
+- 해결방법 : 토큰 재발급 후, git remote set-url origin https://{token}@github.com/{git_repository_url} 
+
+<br>ㅈㅐ
+<br>
