@@ -32,6 +32,7 @@ error: 레퍼런스를 에 푸시하는데 실패했습니다
 
 
 - 해결방법
+[참고 사이트](https://velog.io/@eunddodi/git-pull-%EC%8B%9C-%EB%B0%9C%EC%83%9D%ED%95%98%EB%8A%94-warning-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0Need-to-specify-how-to-reconcile-divergent-branches)
 
 <br>
 
@@ -47,3 +48,13 @@ remote: Write access to repository not granted. unable to access '(repo url)': T
 
 
 - 해결방법 : 토큰 재발급 후, git remote set-url origin https://{token}@github.com/{git_repository_url} 
+
+
+[4]
+
+
+	
+- 원인 : 
+
+
+- 해결방법 : 
